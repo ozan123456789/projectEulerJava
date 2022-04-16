@@ -28,5 +28,26 @@ public class projectEulerSolutions {
 		
 		return sum;
 	}
+	public static int problem2() {
+		int sum=2;
+		
+		int first=1,second=2;
+		int third=first+second;
+		
+		while(third<4000000) {
+			if(third%2==0) {
+				sum+=third;
+			}
+			
+			first=second;
+			second=third;
+			third=first+second;
+			
+			
+		}
+		
+		
+		return sum;
+	}
 	
 }
