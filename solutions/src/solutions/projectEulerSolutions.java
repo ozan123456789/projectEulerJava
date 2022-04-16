@@ -50,4 +50,21 @@ public class projectEulerSolutions {
 		return sum;
 	}
 	
+	private static ArrayList<Long> prime_factors =new ArrayList<Long>();
+	public static int problem3() {
+		long number=600851475143L;
+		 for(long i = 2L; i< number; i++) {
+	         while(number%i == 0) {
+	            //System.out.println(i+" ");
+	            number = number/i;
+	         }
+	      }
+	      if(number >2) {
+	    	  //System.out.println(number);
+	         prime_factors.add(number);
+	      }
+		return (int)number;
+		
+	}
+	
 }
