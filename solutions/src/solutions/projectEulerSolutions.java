@@ -67,4 +67,25 @@ public class projectEulerSolutions {
 		
 	}
 	
+	public static long problem6() {
+		int limit=100;
+		
+		long sum1=0;
+		double sum2=0;
+		long output;
+		
+		for(int i=1;i<=limit;i++) {
+			sum1+=Math.pow(i,2);
+			sum2+=i;
+		}
+		//System.out.println(sum1+"a"+sum2);
+		//sum2=(limit*(limit+1))/2;
+		sum2=Math.pow(sum2,2);
+		output=(long) Math.abs(sum1-sum2);
+		
+		return output;
+		
+	}
+	
+	
 }

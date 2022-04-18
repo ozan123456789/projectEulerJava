@@ -10,6 +10,7 @@ public class main {
 		
 		System.out.println("Solution of problem 3:"+projectEulerSolutions.problem3());
 		
+		System.out.println("Solution of problem 6:"+projectEulerSolutions.problem6());
 	}
 
 }
